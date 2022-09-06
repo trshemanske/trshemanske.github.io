@@ -1,0 +1,226 @@
+/* Reset a few parameters in skeleton */
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+td, th {
+  border-bottom: 0;
+}
+
+/* .container (960px) set in skeleton.css with media break options */
+.container {
+  padding: 10px;
+}
+
+/* End reset */
+body {
+  font-family: "SourceSansPro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg-wrapper {
+  //    text-align: center;
+  position: relative;
+  padding: 5px;
+  background-image: url('../images/StockerPond.jpg');
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+}
+
+/*.bg-wrapper:after {
+    padding-top: 53%;
+    color: red;
+  display: block;
+  content: 'xxx';
+}
+*/
+@keyframes fadein {
+  from {
+    opacity: .3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+ul li a:active {
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+.bottom-nav-1200 {
+  padding-top: 43%;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+}
+
+.bottom-nav-1200 ul {
+  list-style: none !important;
+}
+
+.bottom-nav-1200 ul li {
+  height: 40px;
+}
+
+.bottom-nav-1200 ul li a {
+  padding: 10px;
+  border: solid 1px white !important;
+  border-radius: 4px;
+}
+
+.bottom-nav-1024 {
+  padding-top: 38%;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+}
+
+.bottom-nav-1024 ul {
+  list-style: none !important;
+}
+
+.bottom-nav-1024 ul li {
+  height: 40px;
+}
+
+.bottom-nav-1024 ul li a {
+  padding: 10px;
+  border: solid 1px white !important;
+  border-radius: 4px;
+}
+
+.bottom-nav-800 {
+  padding-top: 27%;
+  text-align: center;
+  color: white;
+  font-size: 90%;
+}
+
+.bottom-nav-800 ul {
+  list-style: none !important;
+}
+
+.bottom-nav-800 ul li {
+  height: 35px;
+}
+
+.bottom-nav-800 ul li a {
+  padding: 10px;
+  border: solid 1px white !important;
+  border-radius: 4px;
+}
+
+.bottom-nav-small {
+  padding-top: 27%;
+  text-align: center;
+  color: white;
+  font-size: 90%;
+}
+
+.bottom-nav-small ul {
+  list-style: none !important;
+}
+
+.bottom-nav-small ul li {
+  height: 35px;
+}
+
+.bottom-nav-small ul li a {
+  padding: 10px;
+  border: solid 1px white !important;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 1180px) {
+  .bottom-nav-1200 {
+    display: block;
+  }
+
+  .bottom-nav-1024 {
+    display: none;
+  }
+
+  .bottom-nav-800 {
+    display: none;
+  }
+
+  .bottom-nav-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1179px) {
+  .bottom-nav-1200 {
+    display: none;
+  }
+
+  .bottom-nav-1024 {
+    display: block;
+  }
+
+  .bottom-nav-800 {
+    display: none;
+  }
+
+  .bottom-nav-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+  .bottom-nav-1200 {
+    display: none;
+  }
+
+  .bottom-nav-1024 {
+    display: none;
+  }
+
+  .bottom-nav-800 {
+    display: block;
+  }
+
+  .bottom-nav-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .bottom-nav-1200 {
+    display: none;
+  }
+
+  .bottom-nav-1024 {
+    display: none;
+  }
+
+  .bottom-nav-800 {
+    display: none;
+  }
+
+  .bottom-nav-small {
+    display: block;
+  }
+}
