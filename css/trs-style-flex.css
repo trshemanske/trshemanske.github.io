@@ -1,0 +1,169 @@
+/* Reset a few parameters in skeleton */
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+td, th {
+  border-bottom: 0;
+}
+
+/* .container (960px) set in skeleton.css with media break options */
+.container {
+  padding: 10px;
+}
+
+/* End reset */
+body {
+  font-family: "SourceSansPro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg-wrapper {
+  position: relative;
+  padding: 5px;
+  background-image: url('../images/StockerPond.jpg');
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+
+ 
+}
+
+.bg-wrapper  .name{
+  font-size: 120%; 
+  font-weight: 600; 
+  color: #192f47;
+}
+
+.bg-wrapper  .title{
+  font-size: 100%; 
+  font-weight: 600; 
+  color: #192f47;
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: .1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.link a:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+.link a:active {
+  background-color: rgba(255, 255, 255, 0.275);
+}
+
+.title{
+  font-size: 100%; 
+  color:  #192f47;
+}
+
+.bottom-nav-email{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content:space-evenly;
+  padding-top: 49%;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 100%;
+}
+
+.link{
+  border: solid white 1px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.bottom-nav-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content:center;
+  color: white;
+  font-size: 100%;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1149px) {
+  .bottom-nav-email{
+    padding-top: 47%;
+  }
+}
+
+
+@media only screen and (min-width: 930px) and (max-width: 1023px) {
+  .bottom-nav-email{
+    padding-top: 44%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 929px) {
+  .bottom-nav-email{
+    padding-top: 42%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .bottom-nav-email{
+    padding-top: 39%;
+  }
+  .bottom-nav-links{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  .bottom-nav-email{
+    padding-top: 35%;
+    font-size:90%;
+  }
+  .bottom-nav-links{
+    font-size: 70%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .bottom-nav-email{
+    padding-top: 30%;
+    font-size:80%;
+  }
+  .bottom-nav-links{
+     font-size: 60%;
+   }
+}
+
+@media only screen and (max-width: 499px) {
+  .bottom-nav-email{
+    padding-top: 27%;
+    font-size:70%;
+  }
+  .bottom-nav-links{
+     font-size: 50%;
+     column-gap: 3px;
+   }
+}
+
