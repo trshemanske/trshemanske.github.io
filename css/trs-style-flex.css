@@ -5,6 +5,7 @@ body {
 
 .container {
   background-color: black;
+  min-height: 100vh;
 }
 
 a {
@@ -27,6 +28,7 @@ a {
    animation: fadein 12s;  /* Active in chrome */
    background-repeat: no-repeat;
    background-size: cover;
+   min-height: 100vh;
  }
 
  @keyframes fadein {
@@ -79,7 +81,7 @@ a:hover, a:active {
   justify-content:center;
   color: white;
   font-size: 100%;
-  padding-top: 78vh;
+  padding-top: 82vh;
   padding-bottom: 40px;
 }
 
