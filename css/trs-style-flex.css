@@ -1,96 +1,46 @@
-/* Reset a few parameters in skeleton */
+body {
+  font-family: "SourceSansPro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+}
+
 a {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  padding: 10px;
-}
-
-a:hover {
-  color: #ddd;
-}
-
-td, th {
-  border-bottom: 0;
-}
-
-/* .container (960px) set in skeleton.css with media break options */
-.container {
-  padding: 10px;
-}
-
-/* End reset */
-body {
-  font-family: "SourceSansPro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 30px;
 }
 
 .bg-wrapper {
-  position: relative;
-  padding: 5px;
-  background-image: url('../images/StockerPond.jpg');
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  min-height: 800px;
-  height: auto;
+   background-image: url('../images/StockerPond.jpg');
+   -webkit-animation: fadein 12s;
+   /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 12s;
+   /* Firefox < 16 */
+   -ms-animation: fadein 12s;
+   /* Internet Explorer */
+   -o-animation: fadein 12s;
+   /* Opera < 12.1 */
+   animation: fadein 12s;  /* Active in chrome */
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
 
- 
-}
-
-.bg-wrapper  .name{
-  font-size: 120%; 
-  font-weight: 600; 
-  color: #192f47;
-}
-
-.bg-wrapper  .title{
-  font-size: 100%; 
-  font-weight: 600; 
-  color: #192f47;
-}
-
-
-@keyframes fadein {
+ @keyframes fadein {
   from {
     opacity: .1;
   }
-
   to {
     opacity: 1;
   }
 }
 
-.link a:hover {
-  background-color: rgba(255, 255, 255, 0.175);
-}
-
-.link a:active {
-  background-color: rgba(255, 255, 255, 0.275);
-}
-
-.title{
-  font-size: 100%; 
-  color:  #192f47;
-}
-
-.bottom-nav-email{
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  justify-content:space-evenly;
-  padding-top: 49%;
-  padding-bottom: 10px;
-  color: white;
-  font-size: 100%;
+a:hover, a:active {
+  color: #ddd;
+  background-color: #666;
 }
 
 .link{
@@ -100,47 +50,71 @@ body {
   border-radius: 4px;
 }
 
+
+.bg-wrapper  .name{
+  font-size: 110%; 
+  font-weight: 600; 
+  color: #192f47;
+  padding: 15px 0 0 20px;
+}
+
+.bg-wrapper  .title{
+  font-size: 90%; 
+  font-weight: 600; 
+  color: #192f47;
+  padding-left: 20px;
+}
+
+/*.title{
+  font-size: 100%; 
+  color:  #192f47;
+  
+}
+*/
+
+.bottom-nav-email{
+  display: flex;
+  flex-direction: row;
+  /*height: 100%;*/
+  justify-content:center;
+  color: white;
+  font-size: 100%;
+  padding-top: 78vh;
+  padding-bottom: 40px;
+}
+
+.link{
+  border: solid white 1px;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  
 .bottom-nav-links{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 10px;
+  column-gap: 30px;
   justify-content:center;
+
+  /*justify-content: space-evenly;*/
+  align-items: center;
   color: white;
-  font-size: 100%;
+  font-size: 80%;
+  padding-bottom: 30px;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1149px) {
+/* @media only screen and (min-width: 1000px) and (max-width: 1199px) {
   .bottom-nav-email{
-    padding-top: 47%;
+    padding-top: 75vh;
   }
 }
 
 
-@media only screen and (min-width: 930px) and (max-width: 1023px) {
-  .bottom-nav-email{
-    padding-top: 44%;
-  }
-}
+@media only screen and (min-width: 750px) and (max-width: 999px) {
 
-@media only screen and (min-width: 800px) and (max-width: 929px) {
   .bottom-nav-email{
-    padding-top: 42%;
-  }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-  .bottom-nav-email{
-    padding-top: 39%;
-  }
-  .bottom-nav-links{
-    font-size: 80%;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 699px) {
-  .bottom-nav-email{
-    padding-top: 35%;
+    padding-top: 50vh;
     font-size:90%;
   }
   .bottom-nav-links{
@@ -148,24 +122,148 @@ body {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 599px) {
+
+@media only screen and (min-width: 550px) and (max-width: 749px) {
   .bottom-nav-email{
-    padding-top: 30%;
+    padding-top: 44%;
+  }
+}
+*/
+/*
+@media only screen and (min-width: 400px) and (max-width: 549px) {
+  .bottom-nav-email{
+    padding-top: 42%;
+    font-size: 90%;
+  }
+  .bottom-nav-links{
+    font-size: 80%;
+    column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+  .bottom-nav-email{
+    padding-top: 39%;
+    padding-bottom: 20px;
+  }
+  .bottom-nav-links{
+    font-size: 80%;
+    }
+}
+*/
+@media only screen and (min-width: 800px) and (max-width: 1299px) {
+  .bottom-nav-email{
+    padding-top: 75vh;
+    font-size:90%;
+  }
+  .bottom-nav-links{
+    font-size: 70%;
+    justify-content: center;
+    align-items: center;
+     
+     column-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .bottom-nav-email{
+    padding-top: 75vh;
+    font-size:90%;
+  }
+  .bottom-nav-links{
+    font-size: 70%;
+    justify-content: space-around;
+     align-items: center;
+     row-gap: 30px;
+     column-gap: 150px;
+  }
+}
+
+@media only screen and (min-width: 416px) and (max-width: 599px) {
+  .bottom-nav-email{
+    padding-top: 75vh;
     font-size:80%;
   }
   .bottom-nav-links{
      font-size: 60%;
+     row-gap: 20px;
+     column-gap: 140px;
+     justify-content: space-around;
+     align-items: center;
    }
+   a{
+    padding: 5px;
+  }
 }
-
-@media only screen and (max-width: 499px) {
+@media only screen and (min-width: 376px) and (max-width: 415px) {
   .bottom-nav-email{
-    padding-top: 27%;
-    font-size:70%;
+    padding-top: 78vh;
+    font-size:80%;
   }
   .bottom-nav-links{
-     font-size: 50%;
-     column-gap: 3px;
+     font-size: 60%;
+     row-gap: 20px;
+     column-gap: 50px;
+     justify-content: space-around;
+     align-items: center;
    }
+   a{
+    padding: 5px;
+  }
 }
+
+@media only screen and (max-width: 375px) {
+  .bottom-nav-email{
+    padding-top: 78vh;
+    font-size:80%;
+  }
+  .bottom-nav-links{
+     font-size: 60%;
+     /*flex-direction: column;
+     row-gap: 20px;*/
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 15px;
+    padding-bottom: 20px;
+   }
+   .bg-wrapper  .name{
+    font-size: 90%; 
+    font-weight: 600; 
+    color: #192f47;
+    padding: 10px 0 0 15px;
+  }
+  
+  .bg-wrapper  .title{
+    font-size: 80%; 
+    font-weight: 600; 
+    color: #192f47;
+    padding-left: 15px;
+  }
+  .link{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  a{
+    padding: 5px;
+  }
+}
+
+
+/* Mobile first break points */
+/* Larger than mobile 
+@media (min-width: 400px) {}
+
+Larger than phablet (also point when grid becomes active) 
+@media (min-width: 550px) {}
+
+Larger than tablet 
+@media (min-width: 750px) {}
+
+Larger than desktop 
+@media (min-width: 1000px) {}
+
+Larger than Desktop HD 
+@media (min-width: 1200px) {}
+*/
 
