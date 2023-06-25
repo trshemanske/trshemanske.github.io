@@ -81,7 +81,7 @@ a:hover, a:active {
   justify-content:center;
   color: white;
   font-size: 100%;
-  padding-top: 82vh;
+  padding-top: 75vh;
   padding-bottom: 40px;
 }
 
@@ -199,7 +199,7 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 376px) and (max-width: 415px) {
   .bottom-nav-email{
-    padding-top: 78vh;
+    padding-top: 70vh;
     font-size:80%;
   }
   .bottom-nav-links{
@@ -208,6 +208,7 @@ a:hover, a:active {
      column-gap: 50px;
      justify-content: space-around;
      align-items: center;
+     padding-bottom: 20px;
    }
    a{
     padding: 5px;
@@ -216,7 +217,7 @@ a:hover, a:active {
 
 @media only screen and (max-width: 375px) {
   .bottom-nav-email{
-    padding-top: 78vh;
+    padding-top: 70vh;
     font-size:80%;
   }
   .bottom-nav-links{
